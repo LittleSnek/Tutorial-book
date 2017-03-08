@@ -1,0 +1,22 @@
+//
+//  main.cpp
+//  Chapter-3.3
+//
+//  Created by Onni Salminen on 4.3.2017.
+//  Copyright © 2017 Onni Salminen. All rights reserved.
+//
+//  Chapter 3 third example
+//
+
+#include "std_lib_facilities.h"
+
+int main() {
+    string previous = " ";
+    string current;
+    while (cin >> current) {
+        if (previous == current) {
+            cout << "Repeated word: " << current << "\n";
+        }
+        previous = current;
+    }
+}
